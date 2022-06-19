@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Responsive -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<!-- Meta Tags required for Progressive Web App -->
+<meta name="apple-mobile-web-app-status-bar" content="#aa7700">
+<meta name="theme-color" content="black">
+
+<title>PWA Tutorial</title>
+</head>
+  
+<body>
+  
+  hello world
+<script type="text/javascript">
+    function requestOrientationPermission(){
+        DeviceOrientationEvent.requestPermission()
+        .then(response => {
+            if (response == 'granted') {
+                window.addEventListener('deviceorientation', (e) => {
+                    // do something with e
+                })
+            }
+        })
+        .catch(console.error)
+    }
+</script>
+
+<button onclick='requestOrientationPermission();'>Request orientation permission</button>
+  </body>
+  
+</html>  
