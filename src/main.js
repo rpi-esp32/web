@@ -1,3 +1,3 @@
     function add(callback) {
-      return 123
+      return "this is a return from js to py-callback"
     }
