@@ -32,13 +32,10 @@
 	if ('serviceWorker' in navigator) {
 		try {
 		console.log('serviceWorker is in NAVIGATOR');
-		await navigator
-				.serviceWorker
-				.register('/py/sw.js', {scope: '/py/'});
-		console.log('registration of /py/sw.js is a success');}
+		await navigator.serviceWorker.register('/web/sw.js', {scope: '/web/'});
+		console.log('registration of /web/sw.js is a success');}
 		catch (e) {console.log(e);}
-	}
-	}
+	}}
 
 
 
