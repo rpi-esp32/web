@@ -19,6 +19,8 @@
   <h1 id='o'>DISAPPERED</h1>
 <script type="text/javascript">
   h = document.getElementbyID('o');
+  h.innerHTML = ('000000');
+  
   window.addEventListener('deviceorientation', function(event) {
     
     h.innerHTML=(event.alpha + ' : ' + event.beta + ' : ' + event.gamma);
