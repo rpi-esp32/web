@@ -16,6 +16,32 @@
   
   hello world
   
+  	<p>Click the button to get your live location.</p>
+	<button onclick="getLocation()">Get Location button</button>
+	<h1 id="demo"></h1>
+	<script>
+	const x = document.getElementById("demo");
+	function getLocation() {
+	  	if (navigator.geolocation) {
+	    	navigator.geolocation.getCurrentPosition(showPosition);
+	  	} else { 
+	    	x.innerHTML = "Geolocation is not supported by this browser.";
+	  	}
+	}
+
+	function showPosition(position) {
+		console.log(position);
+	  	x.innerHTML = "Latitude: " + position.coords.latitude + "<br>Longitude: " + position.coords.longitude;
+	}
+	</script>
+  
+  
+  
+  
+  
+  
+  
+  
   <h1 id='o'>DISAPPERED</h1>
 <script type="text/javascript">
   const h = document.getElementById('o');
