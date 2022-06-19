@@ -20,8 +20,8 @@
 <script type="text/javascript">
   h = document.getElementbyID('o');
   window.addEventListener('deviceorientation', function(event) {
-    o.innerHTML = ('0000');
-    //o.innerHTML=(event.alpha + ' : ' + event.beta + ' : ' + event.gamma);
+    //o.innerHTML = ('0000');
+    o.innerHTML=(event.alpha + ' : ' + event.beta + ' : ' + event.gamma);
 });
   
     function requestOrientationPermission(){
