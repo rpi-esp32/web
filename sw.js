@@ -6,7 +6,7 @@ console.log("maurice file sw.js FULL ASSETS");
 
 self.addEventListener("install", installEvent => {
     console.log("EVENT INSTALL");
-    installEvent.waitUntil(caches.open("pwa")
+    installEvent.waitUntil(caches.open("web")
     .then((cache) => {return cache.addAll(assets);}).catch((err) => console.log("Error INSTALL", err)));
     console.log("INSTALL COMPLETED");
     
