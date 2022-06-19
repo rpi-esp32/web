@@ -16,6 +16,11 @@
   
   hello world
 <script type="text/javascript">
+  
+  window.addEventListener('deviceorientation', function(event) {
+    console.log(event.alpha + ' : ' + event.beta + ' : ' + event.gamma);
+});
+  
     function requestOrientationPermission(){
       console.log('1 function entered');
         DeviceOrientationEvent.requestPermission()
