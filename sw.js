@@ -16,7 +16,7 @@ self.addEventListener("install", installEvent => {
 
 self.addEventListener("fetch", fetchEvent => {
     console.log("EVENT FETCH");
-    fetchEvent.respondWith(caches.match(fetchEvent.request).then(res=>{return res || fetch(fetchEvent.request)}));
+    fetchEvent.respondWith(caches.match(fetchEvent.request).then(res=>{console.log(res); return res || fetch(fetchEvent.request)}));
     console.log("FETCH COMPLETED");
     console.log(fetchEvent.request);
 
