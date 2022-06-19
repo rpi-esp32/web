@@ -11,14 +11,14 @@
 <meta name="apple-mobile-web-app-status-bar" content="#aa7700">
 <meta name="theme-color" content="black">
 <!-- Manifest File link -->
-<link rel="manifest" href="/web/manifest.json">	
-<link rel="shortcut icon" href="/web/images/fav.ico" />
+<link rel="manifest" href="manifest.json">	
+<link rel="shortcut icon" href="images/fav.ico" />
 	
 <title>PWA over web</title>
 </head>
 
 <body>
-<h1 style="color: green;"> GeeksforGeeks</h1>
+<h1 style="color: green;"> GeeksforGeeks - no error </h1>
 <p>First Paragraph</p>
 	<div id="1"></div>
 	<div id="target"></div>
@@ -26,8 +26,6 @@
 
 <script type = "text/javascript">
 	window.addEventListener('load', () => {registerSW();});
-	// Register the Service Worker
-
 	async function registerSW() {
 	if ('serviceWorker' in navigator) {
 		try {
