@@ -15,10 +15,12 @@
 <body>
   
   hello world
-<script type="text/javascript">
   
+  <h1 id='o'></h1>
+<script type="text/javascript">
+  h = document.getElementbyID('o');
   window.addEventListener('deviceorientation', function(event) {
-    console.log(event.alpha + ' : ' + event.beta + ' : ' + event.gamma);
+    o.innerHTML=(event.alpha + ' : ' + event.beta + ' : ' + event.gamma);
 });
   
     function requestOrientationPermission(){
