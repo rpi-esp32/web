@@ -17,6 +17,7 @@
   hello world
 <script type="text/javascript">
     function requestOrientationPermission(){
+      console.log('1 function entered');
         DeviceOrientationEvent.requestPermission()
         .then(response => {
             if (response == 'granted') {
@@ -30,6 +31,7 @@
   
   
   function permission () {
+    console.log('function entered');
     if ( typeof( DeviceMotionEvent ) !== "undefined" && typeof( DeviceMotionEvent.requestPermission ) === "function" ) {
         // (optional) Do something before API request prompt.
         DeviceMotionEvent.requestPermission()
@@ -48,7 +50,7 @@
 }
 </script>
 
-<button onclick='permission();'>Request orientation permission sfjasdfiasjdopfjsd</button>
+<button onclick='permission()'>Request orientation permission sfjasdfiasjdopfjsd</button>
   </body>
   
 </html>  
