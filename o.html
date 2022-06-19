@@ -19,7 +19,7 @@
   	<p>Click the button to get your live location.</p>
 	<button onclick="getLocation()">Get Location button</button>
 	<h1 id="demo"></h1>
-	<h1 id="d"><h1>
+	<h1 id="d">nnnn<h1>
 	<script>
 	const x = document.getElementById("demo");
 	const y = document.getElementById("d");
@@ -34,7 +34,7 @@
 	function showPosition(position) {
 		console.log(position);
 	  	x.innerHTML = "Latitude: " + position.coords.latitude + "<br>Longitude: " + position.coords.longitude + "<br>alt: " + position.coords.altitude + "<br>acc: " + position.coords.accuracy + "<br>altACC: " + position.coords.altitudeAccuracy ;
-		y.innerHTML = "timestamp: " + position.timestamp
+		y.innerHTML = "timestamp: " + position.timestamp ;
 	}
 	</script>
   
