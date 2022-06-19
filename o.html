@@ -31,7 +31,8 @@
 
 	function showPosition(position) {
 		console.log(position);
-	  	x.innerHTML = "Latitude: " + position.coords.latitude + "<br>Longitude: " + position.coords.longitude + "<br>alt: " + position.coords.altitude;
+	  	x.innerHTML = "Latitude: " + position.coords.latitude + "<br>Longitude: " + position.coords.longitude + "<br>alt: " + position.coords.altitude
+		+ "<br>acc: " + position.coords.accuracy;
 	}
 	</script>
   
