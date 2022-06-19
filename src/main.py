@@ -1,4 +1,4 @@
-from js import add
+#from js import add
 from pyodide import create_proxy
 
 #def callback(e):
