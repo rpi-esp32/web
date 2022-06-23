@@ -7,7 +7,7 @@ function App() {
       <div className="App">
         <div> from App() </div>
         <div> from Test </div>
-        <Test></Test>
+        <Test />
       </div>
     )  
   }  
