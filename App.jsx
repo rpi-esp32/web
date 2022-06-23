@@ -4,7 +4,7 @@ import Test  from './Test'
 function App() {
   render() {
     return (
-      <div className="App">
+      <div className="App--">
         <div> from App() </div>
         <div> from Test </div>
         <Test></Test>
