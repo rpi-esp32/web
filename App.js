@@ -1,5 +1,8 @@
+import parse from 'react';
 import React, {Component} from 'react';
 import {Test}  from './Test.jsx';
+
+parse = require('react');
 
 
 import ReactDOM from "react-dom"
