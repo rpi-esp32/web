@@ -1,6 +1,13 @@
 import React, {Component} from 'react';
 import {Test}  from './Test.jsx';
 
+
+import ReactDOM from "react-dom"
+
+const element = <h1>Hello from Create React App</h1>
+
+ReactDOM.render(element, document.getElementById("root"))
+
 class App extends Component {
   render() {
     return (
