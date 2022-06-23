@@ -9,7 +9,7 @@ function App() {
         <div> from Test </div>
         <Test />
       </div>
-    )  
+    ) ; 
   }  
   
 }
