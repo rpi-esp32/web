@@ -7,7 +7,6 @@ class App extends Component {
       <div className="App">
         <div> from App() </div>
         <div> from Test </div>
-        <Test />
       </div>
     ) ; 
   }  
