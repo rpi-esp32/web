@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import {Test}  from './Test'
 
-function App() {
+class App() extends Component {
   render() {
     return (
       <div className="App">
@@ -14,4 +14,4 @@ function App() {
   
 }
 
-export default App:
+export default App;
